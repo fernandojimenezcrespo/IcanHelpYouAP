@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>I can help you?????</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet" href="bin/bootstrap.min.css">
+<script src="bin/jquery.min.js"></script> 
+<script src="bin/bootstrap.min.js"></script> 
+<script src="bin/jspdf.min.js"></script> 
+<script src="bin/html2canvas.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid bg-dark" >
+  <div class="container">
+    <h1 class="display-3 text-white"  ><b>I can help you...</b><img src="img/medora.png" width="147" height="44" alt=""/></h1>
+  </div>
+</div>
+<div class="container">
+  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#inicio">Ayudas Medora</a></li>
+    <li><a data-toggle="tab" href="#plantillaHeces">PDF Plantilla Heces</a></li>
+    <li><a data-toggle="tab" href="#sensorPlasit">PDF Sensor Plasit</a></li>
+    <li><a data-toggle="tab" href="#otrosEnlaces">Enlaces</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="inicio" class="tab-pane fade in active">
+      <h3>INICIO</h3>
+      <p class="h2 text-info">&nbsp;</p>
+      
+		  <ul>
+		  <li><h4><a href="AyudasMedora.html" target="_self">Ayudas Medora</h4></a></li>
+		  </ul>
+    </div>
+    <div id="plantillaHeces" class="tab-pane fade">
+      <h3>Plantilla del Cribado Colorectal</h3>
+		<label for="due">Controlado por:</label>
+		<input type="text" class="input-group-sm" name="due" id="due" size="30" maxlength="40" placeholder="Escribe el nombre del DUE controlador">
+		
+      <div class="container">
+         
+        <input type="button" class="btn-check btn-success" name="btnOpcion" id="id_pdfHeces" value="PDF" autocomplete="off" >
+		  
+        <img src="img/cribadoColorectal.PNG" width="398" height="253" alt=""/>
+		  <div id="contenidoPDF">
+          <div id="idDivTabla">
+            <table class="table table-light" id='idTabla'>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sensorPlasit" class="tab-pane fade">
+      
+	  <img src="img/controlSensores.PNG" width="290" height="140" alt=""/>
+<table class="table tab-content">
+        <tr>
+          <td><label for="paciente1"  class="h4">Paciente 01</label>
+            <input type="text" size="50" maxlength="50"     id="paciente1" name="paciente1" class="input-sm"></td>
+          <td><label for="paciente2"  class="h4">Paciente 02</label>
+            <input type="text" size="50" maxlength="50"     id="paciente2" name="paciente2" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><label for="paciente3"  class="h4">Paciente 03</label>
+            <input type="text" size="50" maxlength="50"     id="paciente3" name="paciente3" class="input-sm"></td>
+          <td><label for="paciente4"  class="h4">Paciente 04</label>
+            <input type="text" size="50" maxlength="50"     id="paciente4" name="paciente4" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><label for="paciente5"  class="h4">Paciente 05</label>
+            <input type="text" size="50" maxlength="50"     id="paciente5" name="paciente5" class="input-sm"></td>
+          <td><label for="paciente6"  class="h4">Paciente 06</label>
+            <input type="text" size="50" maxlength="50"     id="paciente6" name="paciente6" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><label for="paciente7"  class="h4">Paciente 07</label>
+            <input type="text" size="50" maxlength="50"     id="paciente7" name="paciente7" class="input-sm"></td>
+          <td><label for="paciente8"  class="h4">Paciente 08</label>
+            <input type="text" size="50" maxlength="50"     id="paciente8" name="paciente8" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><label for="paciente9"  class="h4">Paciente 09</label>
+            <input type="text" size="50" maxlength="50"     id="paciente9" name="paciente9" class="input-sm"></td>
+          <td><label for="paciente10" class="h4">Paciente 10</label>
+            <input type="text" size="50" maxlength="50"   id="paciente10" name="paciente10" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><label for="paciente11" class="h4">Paciente 11</label>
+            <input type="text" size="50" maxlength="50"   id="paciente11" name="paciente10" class="input-sm"></td>
+          <td><label for="paciente12" class="h4">Paciente 12</label>
+            <input type="text" size="50" maxlength="50"   id="paciente12" name="paciente10" class="input-sm"></td>
+        </tr>
+        <tr>
+          <td><input type="button" class="btn-check" name="btnOpcion" id="id_pdfSensor" value="SENSOR" autocomplete="off" >
+            <label class="btn btn-outline-primary" for="id_pdfSensor">Sensor Plasit</label></td>
+        </tr>
+      </table>
+    </div>
+    <div id="otrosEnlaces" class="tab-pane fade">
+      <ul>
+		<li><a href="https://vidaimprimible.com/calendario-2022-para-imprimir/" target="_blank"><h4>Imprimir Calendarios 2022</h4></a></li>
+		  <li><a href="https://vidaimprimible.com/calendario-2023-minimalista-12-meses/" target="_blank"><h4>Imprimir Calendarios 2023</h4></a></li>
+		</ul>
+      
+		
+		
+    </div>
+  </div>
+</div>
+<script src="bin/bootstrap.bundle.min.js"></script> 
+<script language="javascript" src="bin/start.js"></script> 
+<script language="javascript" src="bin/jspdf.plugin.autotable.min.js"></script>
+</body>
+</html>
