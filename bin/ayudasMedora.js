@@ -75,6 +75,7 @@ $(document).ready(function () {
     var textoCopiado = copiaTexto(this.id);
 
   });
+    
   $("input[name^='entornoCheck']").click(function () {
         var id=this.id;
         var valor=$("#"+id).val();

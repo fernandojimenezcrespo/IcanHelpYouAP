@@ -16,39 +16,85 @@
 
 <body>
 <div id="global" class="container">
-	<table class="table table-bordered">
-	<tr><td>Alergias</td>
-		<td><textarea name="alergias" id="alergias" cols="100" rows="5"></textarea></div></td>
-		<td><img name="cp_alergias" id="cp_alergias" src="img/copiar.png" heigth="40" width="30"></td></tr>
-	<tr><td>patologias_asociadas</td>
-		<td><textarea name="patologias_asociadas" id="patologias_asociadas" cols="100" rows="5"></textarea></td>
-		<td><img name="cp_patologias" id="cp_patologias" src="img/copiar.png" heigth="40" width="30"></td></tr>
-	<tr><td>Tto fármacos que interfieran</td>
-		<td><textarea name="tto_farmacos" id="tto_farmacos" cols="100" rows="5"></textarea></td>
-		<td><img name="cp_tto_farmacos" id="cp_tto_farmacos" src="img/copiar.png" heigth="40" width="30"></td></tr>
-	<tr><td colspan="3">
-		<input type="checkbox" id="UPP" 		name="UPP" class="form-check-input" /> UPP
-		<input type="checkbox" id="HUMEDAD" 	name="HUMEDAD" class="form-check-input" /> HUMEDAD
-		<input type="checkbox" id="ARTERIAL" 	name="ARTERIAL" class="form-check-input" /> VASCULAR ARTERIAL
-		<input type="checkbox" id="VENOSA" 		name="VENOSA" class="form-check-input" /> VASCULAR VENOSA
-		<input type="checkbox" id="DIABETICO" 	name="DIABETICO" class="form-check-input" /> DIABETICO
-	</td>		 </tr>
-	<tr><td>Observaciones</td>
-		<td><textarea name="Observaciones" id="Observaciones" cols="100" rows="5"></textarea></td>
-		<td><img name="cp_Observaciones" id="cp_Observaciones" src="img/copiar.png" heigth="40" width="30"></td></tr>
-	 
-	
-	
-	</table>
-	
+    <a href="index.html" target="_self"><img src="img/volver.png" title="Página anterior" height="40" width="40">Volver</a>
+    <h3>TEXTO EN MEMORIA:<input type="button" class="btn-success" id="textoCopiado" name="textoCopiado" value="NADA EN MEMORIA" readonly></h3>
+<table class="table table-bordered">
+  <tr>
+    <td></td>
+    <td>Consentimiento informado de uso sanitario de las imágenes
+      <select name="consienteimagenes">
+        <option value=''></option>
+        <option value="SI">SI</option>
+        <option value="NO">NO</option>
+      </select></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Alergias</td>
+    <td><textarea name="alergias" id="alergias" cols="100" rows="3"></textarea>
    
   
-	 
-
-	
-	
-	
-	
-	</div>
+  </td>
+  
+  <td><img name="cp_alergias" id="cp_alergias" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+  <tr>
+    <td>patologias_asociadas</td>
+    <td><textarea name="patologias_asociadas" id="patologias_asociadas" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_patologias_asociadas" id="cp_patologias_asociadas" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+  <tr>
+    <td>Tto fármacos que interfieran</td>
+    <td><textarea name="tto_farmacos" id="tto_farmacos" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_tto_farmacos" id="cp_tto_farmacos" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><input type="checkbox" id="UPP" 		name="UPP" class="form-check-input" />
+      UPP
+      <input type="checkbox" id="HUMEDAD" 	name="HUMEDAD" class="form-check-input" />
+      HUMEDAD
+      <input type="checkbox" id="ARTERIAL" 	name="ARTERIAL" class="form-check-input" />
+      VASCULAR ARTERIAL
+      <input type="checkbox" id="VENOSA" 		name="VENOSA" class="form-check-input" />
+      VASCULAR VENOSA
+      <input type="checkbox" id="DIABETICO" 	name="DIABETICO" class="form-check-input" />
+      DIABETICO </td>
+  </tr>
+  <tr>
+    <td>Observaciones</td>
+    <td><textarea name="Observaciones" id="Observaciones" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_Observaciones" id="cp_Observaciones" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+     <tr>
+    <td>ITB</td>
+    <td><textarea name="ITB" id="ITB" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_ITB" id="cp_ITB" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+     <tr>
+    <td>Localización</td>
+    <td><textarea name="Localización" id="Localización" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_Localización" id="cp_Localización" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+    <tr>
+    <td>Antibioterapia asociada</td>
+    <td><textarea name="AntibioterapiaAsociada" id="AntibioterapiaAsociada" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_AntibioterapiaAsociada" id="cp_AntibioterapiaAsociada" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+    <tr>
+    <td>Tratamiento local previo</td>
+    <td><textarea name="TratamientoLocalPrevio" id="TratamientoLocalPrevio" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_TratamientoLocalPrevio" id="cp_TratamientoLocalPrevio" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+     <tr>
+    <td>Comentario</td>
+    <td><textarea name="Comentario" id="Comentario" cols="100" rows="3"></textarea></td>
+    <td><img name="cp_Comentario" id="cp_Comentario" src="img/copiar.png" heigth="40" width="30"></td>
+  </tr>
+    
+    
+    
+</table>
+</div>
+<script language="javascript" src="bin/plantilla_ulceras.js"></script>
 </body>
 </html>
